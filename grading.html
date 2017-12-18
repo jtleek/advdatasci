@@ -20,8 +20,8 @@
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
 <link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
@@ -31,12 +31,10 @@
   }
 </style>
 <script type="text/javascript">
-if (window.hljs) {
-  hljs.configure({languages: []});
-  hljs.initHighlightingOnLoad();
-  if (document.readyState && document.readyState === "complete") {
-    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
-  }
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
 }
 </script>
 
@@ -260,6 +258,9 @@ $(document).ready(function () {
     <li>
       <a href="./21-make-and-stuff.html">Make and JHPCE</a>
     </li>
+    <li>
+      <a href="./22-wrap-up.html">Wrap up/presentations</a>
+    </li>
   </ul>
 </li>
 <li>
@@ -313,18 +314,18 @@ $(document).ready(function () {
 </div>
 
 
-<section id="philosophy" class="level2">
+<div id="philosophy" class="section level2">
 <h2>Philosophy</h2>
 <p>I believe the purpose of graduate education is to train you to be able to think for yourself and initiate and complete your own projects. I am super excited to talk to you about ideas, work out solutions with you, and help you to figure out statistical methods and/or data analysis. I don’t think that graduate school grades are important for this purpose. This means that I don’t care very much about graduate student grades.</p>
 <p>That being said, I have to give you a grade so they will be:</p>
-<ol type="1">
+<ol style="list-style-type: decimal">
 <li>A - Excellent - 90%+</li>
 <li>B - Passing - 80%+</li>
 <li>C - Needs improvement - 70%+</li>
 </ol>
 <p>If you are getting a grade below a C it is because you basically aren’t trying/working. I rarely give them out.</p>
-</section>
-<section id="relative-weights" class="level2">
+</div>
+<div id="relative-weights" class="section level2">
 <h2>Relative weights</h2>
 <p>The percentages will be assigned in the following way:</p>
 <ul>
@@ -333,10 +334,10 @@ $(document).ready(function () {
 <li>Final project - 30%</li>
 </ul>
 <p>You get the points for the Datacamp modules as long as you complete them before class starts (no exceptions without prior approval). You get 50% of the points for attendance at labs and 50% for having your current version of the code up-to-date. The data analysis assignment will be graded on a 1-5 scale for each category described below and the percentages assigned as described below.</p>
-</section>
-<section id="assignments" class="level2">
+</div>
+<div id="assignments" class="section level2">
 <h2>Assignments</h2>
-<section id="data-analysis-assignment" class="level3">
+<div id="data-analysis-assignment" class="section level3">
 <h3>Data analysis assignment</h3>
 <p>(For more on my project philosophy see: <a href="http://bit.ly/wQT5uI" class="uri">http://bit.ly/wQT5uI</a>)</p>
 <p>Each student will be required to perform a data analysis project during the course of the class. Students will have the entire term to perform the data analysis. The project assignments will consist of a scientific description of the problem. Students are responsible for all stages of each data analysis from obtaining the data to the final report. At the conclusion of each analysis each student must turn in:</p>
@@ -345,38 +346,38 @@ $(document).ready(function () {
 <li>A reproducible Rmd file that produces all of the numbers, figures and results in your write-up.</li>
 </ul>
 <p>All documents should be submitted electronically. The grades will be broken down according to the following characterization of your data analysis.</p>
-<ol type="1">
+<ol style="list-style-type: decimal">
 <li>Did you answer the scientific question? (30%)</li>
 <li>Did you use appropriate statistical methods? (40%)</li>
 <li>Was your write-up simple, clear, and precise? (20%)</li>
 <li>Was your code reproducible? (10%)</li>
 </ol>
 <p>Keep in mind that this is a data science class. In some cases standard methodology will be sufficient to answer the question of interest, in some cases you will need to go beyond the course, and in general the goal is to answer the question and provide an estimate of uncertainty. You may speak to your fellow students about specific statistical questions related to the projects, but the overall idea, analysis, and write-up should be your own individual work. You should cite any help you get from fellow students/TAs in your report in standard citation format.</p>
-</section>
-<section id="data-analysis-project-options-term-1" class="level3">
+</div>
+<div id="data-analysis-project-options-term-1" class="section level3">
 <h3>Data analysis project options (Term 1)</h3>
 <p>You are required to pick one of the data analysis options below and perform that analysis over the course of the class.</p>
-<section id="option-1" class="level4">
+<div id="option-1" class="section level4">
 <h4>Option 1</h4>
 <p>A major disaster is currently underway with hurricane <a href="https://www.nytimes.com/2017/08/28/climate/how-hurricane-harvey-became-so-destructive.html?mcubz=0&amp;_r=0">Harvey</a>. Use social media data (Twitter, Instagram, Reddit etc.) to identify times and areas that are hardest hit from the hurricane.</p>
-</section>
-<section id="option-2" class="level4">
+</div>
+<div id="option-2" class="section level4">
 <h4>Option 2</h4>
 <p>We teach thousands of students data analysis in online classes on the Coursera platform. Each of these classes includes a final project. Collect the write-ups people use for the <a href="https://github.com/search?utf8=%E2%9C%93&amp;q=getting+and+cleaning+data&amp;type=">Getting and Cleaning Data project</a> and summarize the main sources of variation in how people complete the project.</p>
-</section>
-<section id="option-3" class="level4">
+</div>
+<div id="option-3" class="section level4">
 <h4>Option 3</h4>
 <p>Perform an analysis of “data scientist” jobs listed on job boards and on the employment pages of major companies. What are the most common skills that employers look for? What are the most unique skills that employers look for? Where are the types of companies that employ the most data scientists?</p>
-</section>
-<section id="option-4" class="level4">
+</div>
+<div id="option-4" class="section level4">
 <h4>Option 4</h4>
 <p>Perform an analysis of the statistical analyses in all published <a href="https://www.plos.org/">PLoS</a> papers. What are the most common techniques? How do they vary by field? Are there any trends over the last 10-15 years?</p>
-</section>
-</section>
-<section id="option-5" class="level3">
+</div>
+</div>
+<div id="option-5" class="section level3">
 <h3>Option 5</h3>
 <p>Compete for the Zillow prize and write up your results: <a href="https://www.zillow.com/promo/Zillow-prize/" class="uri">https://www.zillow.com/promo/Zillow-prize/</a></p>
-<section id="option-6" class="level4">
+<div id="option-6" class="section level4">
 <h4>Option 6</h4>
 <p>You may petition to do your own analysis. You must submit your petition by the 3rd day of class (Wednesday, September 6). We will let you know before the 4th day of class whether you have approval. The minimum requirements for the project include:</p>
 <ul>
@@ -394,40 +395,40 @@ $(document).ready(function () {
 <li><a href="http://rs.io/100-interesting-data-sets-for-statistics/">100 interesting data sets</a></li>
 <li><a href="https://www.data.gov/">data.gov</a></li>
 </ul>
-</section>
-</section>
-<section id="data-analysis-project-options-term-2" class="level3">
+</div>
+</div>
+<div id="data-analysis-project-options-term-2" class="section level3">
 <h3>Data analysis project options (Term 2)</h3>
 <p>These projects are designed to build a data product. The goal of building a data product is to create a data analytic app that can be used by someone without R programming experience. After polling the class some people want to work in large groups and some people want to work in small groups. I have therefore created a list of potential projects (see below) that can be completed with groups of varying sizes. We will spend class on Nov 6 organizing into groups and getting set up.</p>
-<section id="maryland-lunch-project" class="level4">
+<div id="maryland-lunch-project" class="section level4">
 <h4>Maryland lunch project</h4>
 <p>In this project I would like you to collect all of the lunch and breakfast menus of each school district in Maryland for one month (for elementary schools) I would like you to estimate the nutritional value and variety in the lunches. I would also like you to correlate these with income in the school district, educaiton in the school district, and any other relevant demographics. You should make a Shiny app that can be used to explore the relationships between nutritional value, geography, and demographics.</p>
-</section>
-<section id="potential-gender-imbalances-and-the-asa" class="level4">
+</div>
+<div id="potential-gender-imbalances-and-the-asa" class="section level4">
 <h4>Potential gender imbalances and the ASA</h4>
 <p>For this project, I’d like you to characterize potential gender and under represented minorities imbalances in American Statistical Association (ASA): <a href="http://www.amstat.org/" class="uri">http://www.amstat.org/</a>. Collect information from the public website (or with the help of the instructor, from the ASA). Then create an app that shows breakdowns of potential imbalances overall and over time. Compare these for various types of talks (e.g. invited vs contributed) and for topics (e.g. genomics versus causal inference).</p>
-</section>
-<section id="academic-salary-app" class="level4">
+</div>
+<div id="academic-salary-app" class="section level4">
 <h4>Academic salary app</h4>
 <p>For this project I’d like you to scrape as much information as possible on salaries paid by public institutions to faculty, administrators and staff. Perform an analysis to associate job characteristics with salary. Create an app to allow people to explore where salaries are allocated with respect to geography and type of job.</p>
-</section>
-<section id="scholar-profile-app" class="level4">
+</div>
+<div id="scholar-profile-app" class="section level4">
 <h4>Scholar profile app</h4>
 <p>Create an app where an individual can input their name and it pulls information for them on their citations (e.g. through Google Scholar), their NIH/NSF grants (e.g. through NIH reporter) and the classes they have taught (e.g. from myJHU). Then create a set of visualizatons and metrics that show both cumulative values as well as just the past year improvements.</p>
-</section>
-<section id="mva-wait-time-app" class="level4">
+</div>
+<div id="mva-wait-time-app" class="section level4">
 <h4>MVA wait time app</h4>
 <p>The MVA of Maryland posts wait times every 5 minutes while the locations are open: <a href="http://www.mva.maryland.gov/sebin/customerwaittimes/" class="uri">http://www.mva.maryland.gov/sebin/customerwaittimes/</a>. Scrape wait times for several weeks to gather data on the distribution of wait times. Build an app that takes a users location and a specific time/date and lists which MVA location is best for them (you will need to define best by a combination of distance/wait time).</p>
-</section>
-<section id="maryland-poison-control-app" class="level4">
+</div>
+<div id="maryland-poison-control-app" class="section level4">
 <h4>Maryland poison control app</h4>
 <p>The Maryland department of poison control makes data available for calls to the Poison control center by county over time in pdf format: <a href="http://www.mdpoison.com/factsandreports/" class="uri">http://www.mdpoison.com/factsandreports/</a>. Collect these data and then create an analysis that shows trends in poison control calls (reasons, people, etc.) over time. Create an app that allows people to explore the data for poison control calls in Maryland.</p>
-</section>
-<section id="supreme-court-topics-app" class="level4">
+</div>
+<div id="supreme-court-topics-app" class="section level4">
 <h4>Supreme court topics app</h4>
 <p>Scrape data on decisions by the United States Supreme Court. Create a dynamic topic model that shows the types of topics that are being considered by the court on the basis of this text and allows users to show the topics that each justice writes the decision for most frequently.</p>
-</section>
-<section id="other-option" class="level4">
+</div>
+<div id="other-option" class="section level4">
 <h4>Other Option</h4>
 <p>You may petition to do your own app and analysis. You must submit your petition by next week with an analysis plan and and a reason . The minimum requirements for the project include:</p>
 <ul>
@@ -437,9 +438,9 @@ $(document).ready(function () {
 <li>You must specify your own question you are asking from the data</li>
 <li>You need to provide reasonable justification of the utility of the app</li>
 </ul>
-</section>
-</section>
-<section id="data-analysis-reviews" class="level3">
+</div>
+</div>
+<div id="data-analysis-reviews" class="section level3">
 <h3>Data analysis reviews</h3>
 <p>To keep you on track, starting in the 2nd week you will bring your current writeup (in .Rmd format or later on in pdf format) to the course lab. The labs will be run by John and Stephen. You will take turns projecting your labs and getting detailed feedback from the instructors and the other students. You will receive credit for being prepared each week to present your data analysis even if you aren’t selected on that day.</p>
 <p>Lab attendance and participation are mandatory. This is where you will learn how to write up and perform a data analysis. It is also the best way to get “hands dirty” with the projects people are working on.</p>
@@ -448,12 +449,12 @@ $(document).ready(function () {
 <li><em>Stephen</em>: TBD</li>
 <li><em>John</em>: TBD</li>
 </ul>
-</section>
-<section id="datacamp-modules" class="level3">
+</div>
+<div id="datacamp-modules" class="section level3">
 <h3>Datacamp modules</h3>
 <p>Please see individual lectures for assigned DataCamp modules and due dates. You must sign up with John to get on the Datacamp module list. Please visit the <a href="https://www.datacamp.com/groups/advanced-data-science">Advanced Data Science</a> link for the assignments</p>
-</section>
-</section>
+</div>
+</div>
 
 
 

@@ -52,6 +52,8 @@ left:
         href: ./20-more-multiple-testing.html
       - text: "Make and JHPCE"
         href: ./21-make-and-stuff.html
+      - text: "Wrap up/presentations"
+        href: ./22-wrap-up.html
   - text: "Grading"
     href: grading.html
   - text: "Staff"

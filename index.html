@@ -20,8 +20,8 @@
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
 <link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
@@ -31,12 +31,10 @@
   }
 </style>
 <script type="text/javascript">
-if (window.hljs) {
-  hljs.configure({languages: []});
-  hljs.initHighlightingOnLoad();
-  if (document.readyState && document.readyState === "complete") {
-    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
-  }
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
 }
 </script>
 
@@ -260,6 +258,9 @@ $(document).ready(function () {
     <li>
       <a href="./21-make-and-stuff.html">Make and JHPCE</a>
     </li>
+    <li>
+      <a href="./22-wrap-up.html">Wrap up/presentations</a>
+    </li>
   </ul>
 </li>
 <li>
@@ -313,26 +314,26 @@ $(document).ready(function () {
 </div>
 
 
-<section id="course-description" class="level2">
+<div id="course-description" class="section level2">
 <h2>Course Description</h2>
 <p>Provides an intensive introduction to applied statistics and data analysis. Trains students to become data scientists capable of both applied data analysis and critical evaluation of the next generation next generation of statistical methods. Since both data analysis and methods development require substantial hands-on experience, focuses on hands-on data analysis.</p>
-</section>
-<section id="course-objectives" class="level2">
+</div>
+<div id="course-objectives" class="section level2">
 <h2>Course objectives</h2>
 <p>Upon successfully completing this course, students will be able to:</p>
-<ol type="1">
+<ol style="list-style-type: decimal">
 <li>Formulate quantitative models to address scientific questions</li>
 <li>Obtain, clean, transform, and process raw data into usable formats</li>
 <li>Organize and perform a complete data analysis, from exploration, to analysis, to synthesis, to communication</li>
 <li>Apply a range of statistical methods for inference and prediction</li>
 <li>Build data science products that can be used by a broad audience</li>
 </ol>
-</section>
-<section id="pre-requisites" class="level2">
+</div>
+<div id="pre-requisites" class="section level2">
 <h2>Pre-requisites</h2>
 <p>This course is designed for PhD students in the Biostatistics department at Johns Hopkins Bloomberg School of Public Health. It assumes a fair amount of statistical knowledge and moves relatively quickly. I am open to anyone taking the class, but since it is a core requirement for our PhD program I will not be slowing down or allowing auditors for the class.</p>
-</section>
-<section id="course-information" class="level2">
+</div>
+<div id="course-information" class="section level2">
 <h2>Course Information</h2>
 <ul>
 <li>Location: W4019</li>
@@ -340,21 +341,21 @@ $(document).ready(function () {
 <li>Assignments: Please see the grading section for information about assignments.</li>
 <li>Equipment: Please bring a laptop to class</li>
 </ul>
-</section>
-<section id="datacamp" class="level2">
+</div>
+<div id="datacamp" class="section level2">
 <h2>DataCamp</h2>
 <p>We use <a href="https://www.datacamp.com/home">DataCamp</a> for our assignments. Please visit the <a href="https://www.datacamp.com/groups/advanced-data-science">Advanced Data Science</a> link for the assignments</p>
 <p>John’s email is: <a href="mailto:muschellij2@gmail.com">muschellij2@gmail.com</a>.</p>
 <p>Stephen’s email is: <a href="mailto:stephen@jhmi.edu">stephen@jhmi.edu</a>.</p>
-</section>
-<section id="typos-and-corrections" class="level2">
+</div>
+<div id="typos-and-corrections" class="section level2">
 <h2>Typos and corrections</h2>
 <p>Feel free to submit typos/errors/etc via the github repository associated with the class: <a href="https://github.com/jtleek/advdatasci" class="uri">https://github.com/jtleek/advdatasci</a></p>
-</section>
-<section id="thanks" class="level2">
+</div>
+<div id="thanks" class="section level2">
 <h2>Thanks</h2>
 <p>We would like to thank <a href="https://www.datacamp.com/home">DataCamp</a> for providing us with a great platform on Grading and Assignments for this course! Check out their courses and <a href="https://www.datacamp.com/groups/education">DataCamp for Education</a> to use their platform for your course.</p>
-</section>
+</div>
 
 
 

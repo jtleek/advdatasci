@@ -20,8 +20,8 @@
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
 <link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
@@ -31,12 +31,10 @@
   }
 </style>
 <script type="text/javascript">
-if (window.hljs) {
-  hljs.configure({languages: []});
-  hljs.initHighlightingOnLoad();
-  if (document.readyState && document.readyState === "complete") {
-    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
-  }
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
 }
 </script>
 
@@ -260,6 +258,9 @@ $(document).ready(function () {
     <li>
       <a href="./21-make-and-stuff.html">Make and JHPCE</a>
     </li>
+    <li>
+      <a href="./22-wrap-up.html">Wrap up/presentations</a>
+    </li>
   </ul>
 </li>
 <li>
@@ -313,15 +314,15 @@ $(document).ready(function () {
 </div>
 
 
-<section id="previous-versions-of-the-class" class="level2">
+<div id="previous-versions-of-the-class" class="section level2">
 <h2>Previous versions of the class</h2>
 <ul>
 <li><a href="http://jtleek.com/advdatasci16/">2016</a></li>
 <li><a href="http://jtleek.com/advdatasci15/">2015</a></li>
 <li><a href="https://github.com/jtleek/jhsph753and4">2014</a></li>
 </ul>
-</section>
-<section id="books-of-interest" class="level2">
+</div>
+<div id="books-of-interest" class="section level2">
 <h2>Books of interest</h2>
 <ul>
 <li><a href="https://leanpub.com/datastyle">Elements of Data Analytic Style</a></li>
@@ -331,8 +332,8 @@ $(document).ready(function () {
 <li><a href="https://web.stanford.edu/~hastie/ElemStatLearn/">Elements of statistical learning</a></li>
 <li><a href="http://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/">Advanced data analysis from an elementary point of view</a></li>
 </ul>
-</section>
-<section id="blog-posts-of-interest" class="level2">
+</div>
+<div id="blog-posts-of-interest" class="section level2">
 <h2>Blog posts of interest</h2>
 <ul>
 <li><a href="https://simplystatistics.org/2016/12/16/the-four-eras-of-data/">The four eras of data</a></li>
@@ -340,15 +341,15 @@ $(document).ready(function () {
 <li><a href="https://simplystatistics.org/2013/05/29/what-statistics-should-do-about-big-data-problem-forward-not-solution-backward/">What statistics should do about big data: problem forward not solution backward</a></li>
 <li><a href="https://simplystatistics.org/2013/12/12/the-key-word-in-data-science-is-not-data-it-is-science/">The key word in “Data Science” is not Data, it is Science</a></li>
 </ul>
-</section>
-<section id="other-resources" class="level2">
+</div>
+<div id="other-resources" class="section level2">
 <h2>Other resources</h2>
 <ul>
 <li><a href="http://www.rstudio.com/resources/cheatsheets/">Rstudio’s cheatsheets</a></li>
 <li><a href="http://swirlstats.com/">swirl</a></li>
 <li><a href="https://www.datacamp.com/">DataCamp</a></li>
 </ul>
-</section>
+</div>
 
 
 
